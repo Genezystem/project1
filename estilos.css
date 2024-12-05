@@ -1,0 +1,73 @@
+body{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+#contenedor-objeto {
+    margin: 20px auto;
+    width: 200px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+
+#objeto {
+    position: relative;
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+#cabeza {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+#cuerpo {
+    width: 50px;
+    height: 80px;
+    background-color: blue;
+    margin: 0 auto;
+}
+
+.brazo {
+    width: 20px;
+    height: 60px;
+    background-color: blue;
+    position: absolute;
+    top: 50px;
+}
+
+#brazo-izquierdo {
+    left: -25px;
+    transform-origin: top right;
+}
+
+#brazo-derecho {
+    right: -25px;
+    transform-origin: top left;
+}
+
+.pierna {
+    width: 50px;
+    height: 70px;
+    background-color: blue;
+    position: absolute;
+    top: 130px;
+    left: 0px;
+}
+
+#pierna-izquierda {
+    left: 20px;
+    transform-origin: top center;
+}
+
+#pierna-derecha {
+    right: 20px;
+    transform-origin: top center;
+}
